@@ -32,11 +32,18 @@
                             <outlet property="delegate" destination="gcT-vA-kSp" id="LNM-Ug-lT3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="MyList" id="4me-P5-svl"/>
+                    <navigationItem key="navigationItem" title="MyList" id="4me-P5-svl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3q4-IQ-p6i">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addNewItem:" destination="gcT-vA-kSp" id="O5J-1g-lnW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7tI-hi-4Su" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039" y="125"/>
+            <point key="canvasLocation" x="695" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mr7-oo-xxS">
@@ -58,7 +65,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMj-Sc-CQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="125"/>
+            <point key="canvasLocation" x="49" y="117"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.17171472311019897" green="0.56472456455230713" blue="0.95299345254898071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
