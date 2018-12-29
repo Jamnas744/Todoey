@@ -11,10 +11,18 @@ import UIKit
 class TodoViewController: UITableViewController {
     
     var listArray = ["Deposit", "Refund", "Exchange"]
+    
+    let defaults = UserDefaults.standard
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
+        if let item = defaults.array(forKey: "TodoCellArray") as? [String]{
+            listArray = item
+        }
+        
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,6 +60,8 @@ class TodoViewController: UITableViewController {
         let action = UIAlertAction(title: "Update", style: .default) { (action) in
             
             self.listArray.append(newItem.text!)
+            
+            self.defaults.set(self.listArray, forKey: "TodoCellArray")
             
             self.tableView.reloadData()
             
