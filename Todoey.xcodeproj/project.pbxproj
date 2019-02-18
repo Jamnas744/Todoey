@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18E7263821D9375E0084BA70 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E7263721D9375E0084BA70 /* item.swift */; };
+		18071CCB21E3BCF200F62D62 /* CoredataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18071CC921E3BCF200F62D62 /* CoredataModel.xcdatamodeld */; };
+		18F37FA82208C34A0086F53E /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F37FA72208C34A0086F53E /* CategoryTableViewController.swift */; };
 		18F9DC2321CFF5E100DEF9F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9DC2221CFF5E100DEF9F2 /* AppDelegate.swift */; };
 		18F9DC2521CFF5E100DEF9F2 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9DC2421CFF5E100DEF9F2 /* TodoViewController.swift */; };
 		18F9DC2821CFF5E100DEF9F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F9DC2621CFF5E100DEF9F2 /* Main.storyboard */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18E7263721D9375E0084BA70 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		18071CCA21E3BCF200F62D62 /* CoredataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoredataModel.xcdatamodel; sourceTree = "<group>"; };
+		18F37FA72208C34A0086F53E /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		18F9DC1F21CFF5E100DEF9F2 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F9DC2221CFF5E100DEF9F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F9DC2421CFF5E100DEF9F2 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		18E7263921D937BB0084BA70 /* Data model */ = {
 			isa = PBXGroup;
 			children = (
-				18E7263721D9375E0084BA70 /* item.swift */,
+				18071CC921E3BCF200F62D62 /* CoredataModel.xcdatamodeld */,
 			);
 			path = "Data model";
 			sourceTree = "<group>";
@@ -48,6 +50,7 @@
 		18E7263A21D937EA0084BA70 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				18F37FA72208C34A0086F53E /* CategoryTableViewController.swift */,
 				18F9DC2421CFF5E100DEF9F2 /* TodoViewController.swift */,
 			);
 			path = controller;
@@ -171,8 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F9DC2521CFF5E100DEF9F2 /* TodoViewController.swift in Sources */,
-				18E7263821D9375E0084BA70 /* item.swift in Sources */,
+				18071CCB21E3BCF200F62D62 /* CoredataModel.xcdatamodeld in Sources */,
 				18F9DC2321CFF5E100DEF9F2 /* AppDelegate.swift in Sources */,
+				18F37FA82208C34A0086F53E /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +376,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18071CC921E3BCF200F62D62 /* CoredataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18071CCA21E3BCF200F62D62 /* CoredataModel.xcdatamodel */,
+			);
+			currentVersion = 18071CCA21E3BCF200F62D62 /* CoredataModel.xcdatamodel */;
+			path = CoredataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18F9DC1721CFF5E100DEF9F2 /* Project object */;
 }
